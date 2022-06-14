@@ -31,25 +31,25 @@ variable "cluster_identity_oidc_issuer_arn" {
 
 variable "helm_chart_name" {
   type        = string
-  default     = "external-secrets"
+  default     = "kubernetes-external-secrets"
   description = "External Secrets chart name."
 }
 
 variable "helm_chart_release_name" {
   type        = string
-  default     = "external-secrets/external-secrets"
+  default     = "kubernetes-external-secrets"
   description = "External Secrets release name."
 }
 
 variable "helm_chart_repo" {
   type        = string
-  default     = "https://charts.external-secrets.io/"
+  default     = "https://external-secrets.github.io/kubernetes-external-secrets/"
   description = "External Secrets repository name."
 }
 
 variable "helm_chart_version" {
   type        = string
-  default     = "0.5.6"
+  default     = "7.2.1"
   description = "External Secrets chart version."
 }
 
