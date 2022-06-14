@@ -9,7 +9,7 @@ Terraform module for deploying [kubernetes-external-secrets](https://github.com/
 
 ```
 module "external_secrets" {
-  source = "git::https://github.com/DNXLabs/terraform-aws-eks-external-secrets.git?ref=0.1.2"
+  source = "git::https://github.com/DNXLabs/terraform-aws-eks-external-secrets.git"
 
   enabled = true
 

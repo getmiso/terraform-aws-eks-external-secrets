@@ -36,12 +36,6 @@ resource "helm_release" "kubernetes_external_secrets" {
     name  = "serviceAccount.annotations.eks\\.amazonaws\\.com/role-arn"
     value = aws_iam_role.kubernetes_external_secrets[0].arn
   }
-
-  set {
-    name  = "securityContext.fsGroup"
-    value = 65534
-  }
-
   set {
     name  = "customResourceManagerDisabled"
     value = true

@@ -37,7 +37,7 @@ variable "helm_chart_name" {
 
 variable "helm_chart_release_name" {
   type        = string
-  default     = "external-secrets/external-secrets"
+  default     = "external-secrets"
   description = "External Secrets release name."
 }
 
